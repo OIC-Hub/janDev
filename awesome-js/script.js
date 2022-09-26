@@ -1,12 +1,12 @@
  // Variable classs
- var lastName123, nu, a, b, y;
- lastName123 = "Omolewu";
- let firstName = "Sunday";
+//  var lastName123, nu, a, b, y;
+//  lastName123 = "Omolewu";
+//  let firstName = "Sunday";
 
- let num = 234; 
- console.log(firstName);
- console.log(lastName123);
- console.log(num);
+//  let num = 234; 
+//  console.log(firstName);
+//  console.log(lastName123);
+//  console.log(num);
 
  // Data Type
  /*
@@ -41,21 +41,50 @@
   
 
  */
-let firsName = "Sunday";
-let LastName = "Opeyemi";
-let fullName = "Welcome to our office " + firsName + " " + LastName;
-12 + 45 + "Ade" + 23 + 100;
-let add = 2 * "3";
-let  age;
-age=34;
-age ="Adeojo";
-age=100;
+// let firsName = "Sunday";
+// let LastName = "Opeyemi";
+// let fullName = "Welcome to our office " + firsName + " " + LastName;
+// 12 + 45 + "Ade" + 23 + 100;
+// let add = 2 * "3";
+// let  age;
+// age=34;
+// age ="Adeojo";
+// age=100;
 
-let sum = "OIC ";
- sum += "Hub ";
- sum += "Nigeria";
-
-document.getElementById('operator').innerHTML=fullName;
-document.getElementById('suboperator').innerHTML="Assignment concatenation Operator";
-document.getElementById('ans').innerHTML="<code>let Sum=\"OIC\"</code> <br/> <code> Sum +=\"Hub\"</code><br/> <code> Sum +=\"Nigeria\"</code><br/>" +  sum;
+// let sum = "OIC ";
+//  sum += "Hub ";
+//  sum += "Nigeria"; b 
+// document.getElementById('operator').innerHTML=fullName;
+// document.getElementById('suboperator').innerHTML="Assignment concatenation Operator";
+// document.getElementById('ans').innerHTML="<code>let Sum=\"OIC\"</code> <br/> <code> Sum +=\"Hub\"</code><br/> <code> Sum +=\"Nigeria\"</code><br/>" +  sum;
  
+/* Comparison Operators
+==
+>
+<
+>=
+<=
+===
+!=
+!==
+*/
+// let a = 'sunday';
+// console.log((a != 'Sunday'));
+
+/*   
+  Logical Operation
+  &&
+  ||
+  !
+*/
+/* Ternary Operator
+*/
+
+
+// let score = 80;
+// let result = (score >= 70) ? "A": "Fail";
+// console.log(result);
+
+// Link Generator
+let rand = Math.random();
+let link= (rand < 0.5)? "<a href='https://oichub.org'>OIC Hub</a>" : "<a href='https://oicfoundation.org.ng'>OIC Foundation</a>"
