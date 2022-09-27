@@ -8,12 +8,18 @@
     
 </head>
 <body>
-
+    <h2 id="welcome">Welcome to Javascript Class</h2>
+    <p id="body"></p>
     <h1 id="operator"></h1>
     <h3 id="suboperator"></h3>
     <p id="ans"></p>
-
     <script>
+        let welcome =document.getElementById('welcome').innerHTML;
+        let body = document.getElementById('body');
+        body.innerHTML = "<b>" + welcome + "</b>";
+    //    let welcome=document.getElementById('welcome');
+    //    welcome.innerHTML="Javascript is fun and easy to learn";
+    //    console.log(welcome.innerHTML);
     // window.alert("<p>Welcome to js class</P>");
         // document.write("<p>Welcome to js class</P>");
         //     console.log("Welcome to js class");

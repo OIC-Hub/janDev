@@ -88,3 +88,20 @@
 // Link Generator
 let rand = Math.random();
 let link= (rand < 0.5)? "<a href='https://oichub.org'>OIC Hub</a>" : "<a href='https://oicfoundation.org.ng'>OIC Foundation</a>"
+
+// Conditional Statement
+
+let firstName = "Opeyemi";
+if(firstName == 'Sunday'){
+  console.log('Welcome to javascript class ' + firstName);
+}else{
+   console.log("This is not your class " + firstName);
+}
+let score = 74;
+if(score >= 70 && score <= 100){
+    console.log('A')
+}else if(score >= 60 && score <= 69 ){
+  console.log('B');
+}else if(score >= 50 && score <= 59){
+  console.log('C');
+}
