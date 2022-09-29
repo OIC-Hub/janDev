@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        h2{
+            text-align:center;
+        }
+        form{
+            max-width:600px;
+            margin-left:auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- onmouseover="sum(10, 23, 56) -->
+    <h2> Examination System</h2>
+    <p> Result <b id="result"></b></p>
+    <form>
+        <input onmouseout="getScore()" type="text" id="score">
+    </form>
+    <script>
+        // function welcome(){
+        //     let firstName ="Sunday";
+        //      let age = 12;
+        //     console.log('welcome to javascript class ' + firstName + "and your age is" + age);
+        // }
+
+        // function sum(){
+        //     alert(23+ 56);
+        // }
+        // sum()
+        
+        // function sum(){
+        //     let a =67;
+        //     let b =100;
+        //     let c = a + b;
+        //     return c
+        //       console.log(b)
+        // }
+//  function sum(a, b, y){
+//      console.log(a + b + y);
+//  }
+
+
+        // welcome()
+        // console.log();
+     function getScore(){
+        let result;
+     let score = document.getElementById('score').value;
+    if(score >= 70 && score <= 100){
+        result="A";
+    }
+   else if(score >= 60 && score <= 69){
+        result="B";
+    }
+    else if(score >= 50 && score <= 59){
+        result="C";
+    }
+    else if(score >= 45 && score <= 49){
+        result="D";
+    }
+    else if(score >= 40 && score <= 44){
+        result="E";
+    }
+    else if(score == ""){
+        result="Not available";
+    }
+    else if(score > "In"){
+        result="Not available";
+    }
+    document.getElementById('result').innerHTML=result;
+
+    }
+   </script>
+</body>
+</html>
