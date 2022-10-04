@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String</title>
+</head>
+<body>
+    <h2>String Data Type</h2>
+
+    <script>
+        var name ="Mofe Oluwa";
+      
+
+  var welcome =  "Hello" + "World";
+  let countryName= "Nigeria"
+  let qoute= `A long time ago in a country called ${countryName}`;
+  console.log(qoute);
+
+// String Properties and methods
+console.log(name.length)
+
+// Extracting Methods (Slice, substring, substr)
+var name ="Mofe Oluwa";
+ let newName= name.slice(0, -1);
+ console.log(newName)
+//   var welcom = new String("Hello World");
+
+//subString()
+console.log(name.substring(0, 8));
+
+//substr()
+console.log(name.substr(5, 5))
+
+// replace()
+let word="Welcome to Javascript class"
+let newRe=name.replace('wa', 'Olorun')
+console.log(newRe)
+let newWorld = word.replace('Javascript', 'PHP')
+console.log(newWorld);
+// toUpperCase()
+//toLowerCAse()
+console.log(newWorld.toUpperCase());
+console.log(newWorld.toLowerCase());
+ let fullName ="sunday Opeyemi opeyemi  opeyemi  opeyemi  opeyemi  opeyemi";
+//  let newFullName=fullName.slice(0, 1).toUpperCase() + fullName.slice(1, 6) + " " +fullName.slice(7, 8).toUpperCase() + fullName.slice(8); 
+ let newFullName=fullName.slice(0, 1).toUpperCase() + fullName.slice(1, 6) + " " +fullName.slice(7, 8).toUpperCase() + fullName.slice(fullName.indexOf('peyemi')); 
+ console.log(newFullName)
+ //Search Methods
+ // IndexOf()
+ console.log(fullName.indexOf('opeyemi', 8));
+ //lastIndexOf()
+ console.log(newFullName.lastIndexOf('ope'));
+ // search()
+ console.log(newFullName.search('ope'));
+ console.log(newFullName.search(/ope/i));
+ // match()
+//  console.log(newFullName.match(/ope/ig)); 
+// toString()
+let a =5;
+ let b = a.toString()
+    console.log(typeof b)
+   //startWith()
+   let phone ="08002519926"
+   if(phone.startsWith('070') || phone.startsWith('080') || phone.startsWith('070')){
+     if(phone.length == 11){
+    console.log('Valid Number')
+}else{
+    console.log('Number not valid');
+}
+   }else{
+    console.log('Number not valid');
+   }
+//   console.log(phone.startsWith('070'))
+
+//endWith()
+
+// padStart();
+
+let num =5
+nums = num.toString()
+
+// console.log(nums.padStart(4, 'x'))
+console.log(nums.padEnd(4, '.00'))
+
+    </script>
+</body>
+</html>
