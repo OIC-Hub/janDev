@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Form</title>
+</head>
+<body>
+    <div class="main-form" style="width:600px; margin-left:auto ;"></div>
+    <h2>Multiple Form</h2>
+    <form id="registerform">
+    <p>
+        name <br>
+        <input type="text" name="name" value="Sarah">
+    </p>
+    Phone <br>
+    <input type="text" name="phone">
+</p>
+  Age <br>
+<input type="number" name="age">
+</p>
+<input type="submit" value="Register">
+    </form>
+</div>
+<script>
+    let regForm = document.getElementById('registerform');
+    regForm.addEventListener('submit', function(e){
+        e.preventDefault();
+    let name = regForm['name'].value;
+   let phone = regForm['phone'].value;
+   let age = regForm['age'].value
+   console.log(age)
+
+   
+    
+})
+   
+    // console.log(regForm['name'])
+// const nums = [1, 2, {name:'Sunday', addr:"Osogbo", email:"sunday@oichub.org"}, 3, [2,3,4, ['Ade', 'Ojo']], ['Sunday', 12, 'Osogbo']];
+// console.log(nums[2].email);
+// const user= {name:'Sunday', addr:"Osogbo", email:"sunday@oichub.org"}
+// console.log(user['email'])
+// console.log(user.addr)
+</script>
+</body>
+</html>
