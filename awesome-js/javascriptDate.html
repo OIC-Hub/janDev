@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Date</title>
+</head>
+<body>
+
+    
+    <script>
+        // Javascript Date
+        var oldDate = new Date(2020, 03, 8)
+        var newDate = new Date()
+    // console.log(newDate.toDateString());
+    // console.log(newDate.toLocaleDateString());
+    // console.log(newDate.toLocaleTimeString());
+if(oldDate < newDate){
+    console.log('Past Event')
+}else if(oldDate == newDate){
+    console.log('Today\'s Event')
+}else{
+    console.log("Upcoming Event");
+}
+ // Date Metods
+ var months =['Jan', "Feb", 'March', "April", 'May', 'June', 'July', "August", "Sept", "Oct", "Nov", "Dec"];
+ 
+ console.log(months[newDate.getMonth()]);
+ console.log(oldDate.getFullYear());
+ console.log(newDate.getMonth());
+ console.log(newDate.get);
+//Assignment Three
+ //2:34:34
+
+
+</script>
+</body>
+</html>

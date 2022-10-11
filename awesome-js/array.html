@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array </title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+    const numbers = [23, 65, 100];
+    numbers[2] = "Sunday"
+    numbers[3] =200
+    numbers[4] =20000
+    numbers[5] =20
+const cars = new Array();
+//  const numbers = [];
+//    numbers[0] = 23;
+//    numbers[1] = 65;
+//    numbers[2] =100
+//    if(numbers){
+//     console.log('Welcome to OIC class')
+//  }
+
+// Array methods and properties
+
+// length
+// pop()
+//push()
+//shift
+//unshift()
+// numbers.pop()
+// numbers.push({name:'Sunday Opeyemi', age:12})
+// numbers.shift()
+// numbers.unshift("Omolewu")
+
+
+// Array extraction methods
+ // slice()
+ //splice()
+
+//  console.log(numbers.slice(0, 5))
+ numbers.splice(2, 2, 67)
+   let name="Ade"
+//  Array.isArray(numbers)
+// arrayname instanceof  Array
+ console.log(numbers instanceof Array)
+
+ const names=['Halimat', "Timilehin", 'Sarah', 'Mofeoluwa'];
+ console.log(names.sort())
+ console.log(names.reverse())
+//Ascending
+console.log(numbers.sort(function(a, b){
+   return  a-b
+ }));
+ //Descending Order
+ console.log(numbers.sort(function(a, b){
+   return  b-a
+ }));
+</script>
+</body>
+</html>
