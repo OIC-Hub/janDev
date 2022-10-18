@@ -66,12 +66,10 @@ numbers.forEach(function(value, index, arry){
  }
  )
   console.log(text)
-
 //   function sum(){
 //     //
 //   }
  // Arroy function
-
 //  const sum = () =>{
 
 //  }
