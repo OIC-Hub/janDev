@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+    <h1 class="ways"> <b>Ways of getting elements from HTML Document</b></h1>
+    <p class="ways" > Welcome to Javascript</p>
+</div>
+    <p>We train, Create and Develop</p>
+    <p id="sarah">Sarah</p>
+    <script>
+     let queryMethod= document.querySelectorAll(".ways");
+      console.log(queryMethod);
+     let ways =document.getElementsByClassName("main")[0];
+     let methods = document.getElementsByTagName('p');
+      console.log(methods);
+    //  for(let i=0; i< ways.length; i++){
+    //    console.log(ways[i].innerText)
+    //  }
+     console.log(ways);
+    </script>
+    <script type="module" src="impt.js"></script>
+</body>
+</html>
