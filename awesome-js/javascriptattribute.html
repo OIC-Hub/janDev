@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Attribute</title>
+</head>
+<body>
+<div id="main">
+
+</div>
+<h2>Welcome to our official website</h2>
+ <img  alt="">
+ <br>
+ <button onclick="getImage()">Get Image</button>
+<script>
+  let main = document.createElement('section');
+  main.innerText = 'About Us';
+   let divMain= document.querySelector('#main');
+   divMain.appendChild(main)
+    function getImage(){
+        let randNUms = Math.floor(Math.random() * 7)
+        if(randNUms ==0){
+            randNUms =1;
+        }
+    let img = document.querySelector('img');
+    
+   let imgValue=  img.getAttribute('src');
+   if(imgValue){
+    img.removeAttribute('src');
+   }else{
+    img.setAttribute('src', 'images/' +randNUms+ '.png');
+   }
+}
+let img = document.querySelector('img');
+img.alt="Dice One"
+let elem=document.querySelector('h2');
+elem.setAttribute('title', 'Welcome to our official site')
+
+
+// Element Creation
+let para = document.createElement('p')
+para.innerHTML="Element Creation Page";
+let elemBody = document.body;
+let h2elem = document.querySelector('h2');
+elemBody.appendChild(para);
+elemBody.insertBefore(para, h2elem);
+
+</script>
+</body>
+</html>

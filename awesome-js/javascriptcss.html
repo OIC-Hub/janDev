@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .welcome{
+        background-color: brown;
+        font-size: 30;
+    }
+    .hidden{
+        display:  none;
+    }
+    .togreen{
+        background-color: green;
+        color: white;
+        display: block;
+    }
+</style>
+<body>
+    <h1 onclick="hide()" class="oic ">Hello World</h1>
+    <button onclick="seek()">Hide/Seek</button>
+    <script>
+         let h1do = document.querySelector('h1');
+         h1do.style.backgroundColor="blue";
+         h1do.style.fontSize="50px";
+    //      let h1doc = document.querySelector('h1');
+    //     h1doc.className='welcome';
+    //     function hide(){
+    //         let h1doc = document.querySelector('h1');
+    //     h1doc.className='hidden';
+    // }
+
+    let h1doc = document.querySelector('h1');
+     h1doc.classList.add('welcome')
+    //  function seek(){
+    //     let h1doc = document.querySelector('h1');
+    //     h1doc.classList.toggle('togreen');
+    //  }
+    function seek(){
+        let h1doc = document.querySelector('h1');
+        if(h1doc.classList.contains('welcome')){
+            h1doc.classList.remove('welcome');
+            h1doc.classList.add('togreen');
+        }else{
+            h1doc.classList.remove('togreen');
+            h1doc.classList.add('welcome');
+        }
+     }
+    </script>
+</body>
+</html>
