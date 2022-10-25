@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+
+
+    <div>
+        <div>
+            <img  alt="" id="pic">
+        </div>
+        <p id="name"></p>
+        <p id="email"></p>
+    </div>
+
+    <script>
+     fetch("https://randomuser.me/api/").then(function(data){
+      return  data.json()
+     }).then(response =>{
+       let result = response.results[0];
+        let serverPicture = result.picture.medium;
+          let  pic = document.querySelector('#pic');
+            pic.src = serverPicture;
+        let name = result = response.results[0].name;
+        let fullName = name.title + name.first + name.last;
+        document.querySelector('#name').innerHTML=fullName;
+     }).catch(err =>{
+        console.log(err)
+     })
+     
+
+    </script>
+</body>
+</html>
