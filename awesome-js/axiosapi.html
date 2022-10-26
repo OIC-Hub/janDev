@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axios
+
+    </title>
+</head>
+<body>
+    
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+axios('https://v6.exchangerate-api.com/v6/cc02bc7972a0c8b71e9ac68b/latest/NGN')
+.then(serverData =>{
+ console.log(serverData.data)
+}).catch(err =>{
+    console.log(err)
+})
+</script>
+</body>
+</html>
