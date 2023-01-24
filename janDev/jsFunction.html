@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Function</title>
+</head>
+<body>
+    <div id="sum"></div>
+     <div id="greet"> </div>
+     <p onclick="greeting()">Greeting</p>
+      <input type="text" id="output" oninput="greeting()">
+      <br />
+      <button onmouseover="one()">1</button>
+    <script>
+      document.getElementById('sum').innerHTML= sum(12,34); 
+          //Syntax
+
+        /* function functionName (parameters){
+            //Codes
+        }
+        */
+     function greeting(){
+       let name= document.getElementById('output').value;
+        document.getElementById('greet').innerText="Welcome to our supermarket," + name
+     } 
+   function one(){
+    document.getElementById('output').value +=1
+   }
+
+   function sum(a=0, b=0, c=0){
+    return a+b+c
+    
+   }
+  
+</script>
+</body>
+</html>

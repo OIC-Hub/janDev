@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form input</title>
+</head>
+<body>
+    <div style="width:40%;margin:auto; margin-top:5%;">
+        <label>Score</label>
+        <input type="text" value="45"  id="score" style="width: 100%; height: 40px; outline:none; border-bottom: 1px outset grey;">
+         <button onclick="document.getElementById('score').value +='1'">1</button>
+         <button onclick="document.getElementById('score').value +='2'">2</button>
+         <button>3</button> 
+         <button onclick="document.getElementById('score').value +='+'">+</button>
+         <button onclick="document.getElementById('score').value = eval(document.getElementById('score').value)">=</button>
+    </div>
+
+    <script>
+ let score=document.getElementById('score');
+ score.value
+ score.value=567;
+
+    </script>
+</body>
+</html>
