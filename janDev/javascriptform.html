@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Form</title>
+    <style>
+        form{
+            width:40%;
+            margin:auto;
+        }
+        input{
+            width: 100%;
+            height:40px;
+        }
+        .form-group{
+            margin-bottom: 2%;
+        }
+        .btn{
+            background-color: blue;
+            color: white;
+            padding: 1% 3%;
+            border-radius: 5%;
+        }
+        .btn:hover{
+            background-color: white;
+            color:black;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <form name="Register">
+        <h2> User Registration</h2>
+        <div id="user">
+
+        </div>
+        <div class="form-group">
+            Name : <br/>
+        <input type="text" name="name" id="">
+        </div>
+        <div class="form-group">
+            Email : <br/>
+        <input type="email" name="email" id="">
+        </div>
+        <div class="form-group">
+            Phone : <br/>
+        <input type="tel" name="phone" id="">
+        </div>
+        <div class="form-group">
+            Password : <br/>
+        <input type="password" name="password" id="">
+        </div>
+        <button type="submit" class="btn">Register</button>
+    </form>
+    <form>
+
+    </form>
+    <script>
+    let regForm=document.forms[0];
+    regForm.addEventListener('submit', (e)=>{
+        e.preventDefault(); 
+      let name = regForm['name'].value;
+      let email = regForm['email'].value;
+      let phone = regForm['phone'].value;
+      let password = regForm['password'].value;
+      document.getElementById('user').innerHTML=`Welcome to our office ${name}. 
+      Check your details below;<p>
+        email: ${email} <br>
+        phone: ${phone} <br/>
+        password: ${password} <br>
+        </p>`;
+    })
+    </script>
+</body>
+</html>

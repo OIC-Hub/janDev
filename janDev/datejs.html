@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Date</title>
+</head>
+<body>
+    <script>
+       let currenDate= new Date();
+       let dday=new Date('1999, mar 10')
+       // Date methods
+    console.log(dday.toString());
+    console.log(dday.toDateString());
+    console.log(dday.toTimeString());
+    console.log(dday.toISOString());
+    console.log(dday.toLocaleString());
+    console.log(dday.toLocaleTimeString());
+    // get methods
+ let year = currenDate.getFullYear()
+ let month = currenDate.getMonth()
+ const months =['January', 'February', 'March', 'April']
+ console.log(months[month])
+ console.log(dday.getDay())
+ //set Methods
+  currenDate.setFullYear(2009)
+  currenDate.setMonth(03)
+  console.log(currenDate)
+     
+    </script>
+</body>
+</html>
