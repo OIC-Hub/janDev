@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+
+<div id="demo"></div>
+<div id="dic">
+
+</div>
+
+    <script>
+        //JSON  Javascript Object Notation 
+      const user= {name: "Sunday", age: 15};
+      console.log(JSON.stringify(user))
+      const userJson = '{"name": "Sunday", "age": 15}';
+      const newUser = JSON.parse(userJson);
+
+         console.log(newUser)
+       console.log(typeof userJson) 
+
+       const users = [
+        {name: 'Adeeyo Ojo', country:'Nigeria', city:'Osogbo', email:'ade@gmail.com'},
+        {name: 'Owoeye Bolanle', country:'Nigeria', city:'Ikirun', email:'owoeye@gmail.com'},
+        {name: 'Kenny Quuen', country:'Uk', city:'Herts', email:'kenny@gmail.com'},
+        {name: 'Lampard Joe', country:'UK', city:'Lodon', email:'joe@gmail.com'},
+        {name: 'Henry Adebayo', country:'Nigeria', city:'Osogbo', email:'adebayo@gmail.com'}
+       ]
+       
+      console.log(JSON.stringify(users))
+
+         
+      // Callback function
+
+    //   setTimeout(greet, 3000)
+      setInterval(()=>{
+         let newDate = new Date();
+            let hours = newDate.getHours()
+            let minute = newDate.getMinutes();
+            let seconds = newDate.getSeconds()
+            document.getElementById('demo').innerHTML=`${hours}: ${minute}: ${seconds}`;
+      }, 1000)
+
+        function greet(){
+            document.getElementById('demo').innerHTML="Welcome to OIC Hub"
+        }
+//    document.getElementById('demo').innerHTML= JSON.stringify(users);
+
+
+//
+
+let word= "computer"
+fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+.then(res => res.json())
+.then(res =>{
+
+    console.log(res[0].word)
+    let wordmeaning=res[0].meanings[0].definitions[0].definition
+    document.getElementById('dic').innerHTML= word + " Meaning: " + wordmeaning
+})
+.catch(err => console.log(err))
+
+
+    </script>
+</body>
+</html>

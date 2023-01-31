@@ -72,6 +72,12 @@
         password: ${password} <br>
         </p>`;
     })
+
+    let text = `[
+        {"Name": "Adde", "age": 45},
+        {"Name": "Sunny", "age": 5, "ready": true}
+    ]`
+    console.log(JSON.parse(text)[0].Name);
     </script>
 </body>
 </html>
