@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML COLLECTION AND NODELIST </title>
+    <style>
+        .link{
+            color:blue;
+        }
+        .active{
+            color:red
+        }
+    </style>
+</head>
+<body>
+    <div class="link" onmouseover="hover()" onmouseleave="ml()"></div>
+     <h1 class="js">Headline</h1>
+     <p class="js">Welcome to Javscript class</p>
+     <p class="js">Javascript is fun to learn</p>
+     <ul class="js">
+        <li id="one">one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+     </ul>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, officia!</p>
+  <p><button onclick="remove()">Remove the first list</button></p>
+   <script>
+    // let p=  document.getElementsByTagName('p');
+    // for(let i=0; i<p.length; i++){
+    //     console.log(p[i])
+    // }
+    // console.log(p)
+
+    // let p = document.getElementsByClassName('js')[0]
+    // console.log(p)
+
+    //Nodelist
+   console.log(document.querySelectorAll('#one'))
+ let h2 = document.createElement('h2');
+   h2.innerHTML="OIC Hub LTD";
+let div = document.querySelector('div');
+ div.appendChild(h2);
+ let ul = document.querySelector('ul');
+    let rmElement= document.querySelectorAll('li')[0]
+     let newEl = document.createElement('li')
+     newEl.innerHTML = "New Me";
+     ul.replaceChild(newEl, rmElement)
+
+ function remove(){
+    let ul = document.querySelector('ul');
+    let rmElement= document.querySelectorAll('li')[0]
+    ul.removeChild(rmElement)
+
+//  let rmElement= document.querySelector('li').remove()
+}
+
+ //element Attribute
+
+    div.setAttribute('title', "School of coding");
+    function hover(){
+        div.setAttribute('class', 'active');
+    }
+    function ml(){
+        div.removeAttribute('class')
+    }
+    </script>
+< /body>
+</html>
